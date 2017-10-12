@@ -67,7 +67,9 @@
               ]
             }
           ]
-        }
+        },
+        "name": "Profile",
+        "selected": true        
       }
   ]
 }
