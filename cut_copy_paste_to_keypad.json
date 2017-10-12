@@ -2,6 +2,7 @@
   "title": "Cut/Copy/Paste to Keypad 1/2/3",
   "rules": [
     {
+      "description": "Use Keypad 1/2/3 for Cut/Copy/Paste",
       "manipulators": [
         {
           "type": "basic",
