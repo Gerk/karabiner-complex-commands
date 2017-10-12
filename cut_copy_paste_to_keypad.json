@@ -1,0 +1,67 @@
+{
+  "title": "Cut/Copy/Paste to Keypad 1/2/3",
+  "rules": [
+    {
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_1",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "x",
+              "modifiers": [
+                "left_control"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_2",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "c",
+              "modifiers": [
+                "left_control"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_3",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "v",
+              "modifiers": [
+                "left_control"
+              ]
+            }
+          ]
+        }
+
+      ]
+    }
+  ]
+}
