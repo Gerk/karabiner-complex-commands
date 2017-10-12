@@ -1,75 +1,113 @@
 {
   "profiles": [
-    {
-      "complex_modifications": {
-          "rules": [
-            {
-              "description": "Use Keypad 1/2/3 for Cut/Copy/Paste",
-              "manipulators": [
-                {
-                  "type": "basic",
-                  "from": {
-                    "key_code": "keypad_1",
-                    "modifiers": {
-                      "optional": [
-                        "any"
+      {
+          "complex_modifications": {
+              "rules": [
+                  {
+                      "description": "Use Keypad 1, 2, 3, ., 0 for Cut, Copy, Paste, Undo, Redo",
+                      "manipulators": [
+                          {
+                              "from": {
+                                  "key_code": "keypad_1",
+                                  "modifiers": {
+                                      "optional": [
+                                          "any"
+                                      ]
+                                  }
+                              },
+                              "to": [
+                                  {
+                                      "key_code": "x",
+                                      "modifiers": [
+                                          "left_command"
+                                      ]
+                                  }
+                              ],
+                              "type": "basic"
+                          },
+                          {
+                              "from": {
+                                  "key_code": "keypad_2",
+                                  "modifiers": {
+                                      "optional": [
+                                          "any"
+                                      ]
+                                  }
+                              },
+                              "to": [
+                                  {
+                                      "key_code": "c",
+                                      "modifiers": [
+                                          "left_command"
+                                      ]
+                                  }
+                              ],
+                              "type": "basic"
+                          },
+                          {
+                              "from": {
+                                  "key_code": "keypad_3",
+                                  "modifiers": {
+                                      "optional": [
+                                          "any"
+                                      ]
+                                  }
+                              },
+                              "to": [
+                                  {
+                                      "key_code": "v",
+                                      "modifiers": [
+                                          "left_command"
+                                      ]
+                                  }
+                              ],
+                              "type": "basic"
+                          },
+                          {
+                              "from": {
+                                  "key_code": "keypad_period",
+                                  "modifiers": {
+                                      "optional": [
+                                          "any"
+                                      ]
+                                  }
+                              },
+                              "to": [
+                                  {
+                                      "key_code": "z",
+                                      "modifiers": [
+                                          "left_command"
+                                      ]
+                                  }
+                              ],
+                              "type": "basic"
+                          },
+                          {
+                              "from": {
+                                  "key_code": "keypad_0",
+                                  "modifiers": {
+                                      "optional": [
+                                          "any"
+                                      ]
+                                  }
+                              },
+                              "to": [
+                                  {
+                                      "key_code": "z",
+                                      "modifiers": [
+                                          "left_command",
+                                          "left_shift"
+                                      ]
+                                  }
+                              ],
+                              "type": "basic"
+                          }
                       ]
-                    }
-                  },
-                  "to": [
-                    {
-                      "key_code": "x",
-                      "modifiers": [
-                        "left_control"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "basic",
-                  "from": {
-                    "key_code": "keypad_2",
-                    "modifiers": {
-                      "optional": [
-                        "any"
-                      ]
-                    }
-                  },
-                  "to": [
-                    {
-                      "key_code": "c",
-                      "modifiers": [
-                        "left_control"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "basic",
-                  "from": {
-                    "key_code": "keypad_3",
-                    "modifiers": {
-                      "optional": [
-                        "any"
-                      ]
-                    }
-                  },
-                  "to": [
-                    {
-                      "key_code": "v",
-                      "modifiers": [
-                        "left_control"
-                      ]
-                    }
-                  ]
-                }
-
+                  }
               ]
-            }
-          ]
-        },
-        "name": "Profile",
-        "selected": true        
+          },
+        "name": "Default Profile",
+        "selected": true
       }
   ]
 }
